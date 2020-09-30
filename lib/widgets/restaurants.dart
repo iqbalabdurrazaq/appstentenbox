@@ -72,9 +72,9 @@ class _RestaurantsState extends State<Restaurants> {
                         // border: Border.all(color: Colors.white, width: 1.0),
                         boxShadow: <BoxShadow>[
                           new BoxShadow(
-                            color: Colors.black,
-                            blurRadius: 2.0,
-                            offset: new Offset(0.8, 0.8),
+                            color: Colors.black26,
+                            blurRadius: 6.0,
+                            offset: new Offset(0.0, 2.8),
                           ),
                         ],
                       ),

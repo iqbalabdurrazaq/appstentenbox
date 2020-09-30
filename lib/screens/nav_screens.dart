@@ -45,13 +45,14 @@ class _NavScreenState extends State<NavScreen> {
         child: _screens[_currentIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 10.0,
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.redAccent,
         currentIndex: _currentIndex,
         selectedItemColor: Colors.white,
-        selectedFontSize: 11.0,
+        selectedFontSize: 11.5,
         unselectedItemColor: Colors.black,
-        unselectedFontSize: 11.0,
+        unselectedFontSize: 11.5,
         onTap: (index) => setState(() => _currentIndex = index),
         items: _icons
             .map(
@@ -60,9 +61,13 @@ class _NavScreenState extends State<NavScreen> {
                 BottomNavigationBarItem(
                   icon: Icon(
                     icon,
-                    size: 25.0,
+                    size: 28.0,
                   ),
-                  title: Text(title),
+                  title: Text(
+                    title,
+                    style:
+                        TextStyle(fontSize: 11.5, fontWeight: FontWeight.w500),
+                  ),
                 ),
               ),
             )
